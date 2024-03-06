@@ -1,1 +1,17 @@
+#Nama toko
+print('=' *30)
+print(" Selamat datang di D4 Miexu ")
+print('=' *30)
+#Daftar menu
+print("\nMenu D4 Miexu:")
+print ("1 Miexue Ice Cream  = Rp.  5.000")
+print ("2 Boba Shake        = Rp. 16.000")
+print ("3 Mi Sundae         = Rp. 14.000")
+print ("4 Mi Ganas          = Rp. 11.000")
+print ("5 Creamy Mango Boba = Rp. 22.000")
+class Menu:
+    def __init__(self, name, harga):
+        self.name = name
+        self.harga = harga
 
+menu_items = [
