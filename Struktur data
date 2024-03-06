@@ -49,3 +49,20 @@ while True:
     print("\nMenu Aplikasi Pemesanan:")
     print("1. Tambah pesanan ke keranjang")
     print("2. Tampilkan pesanan yang sudah ditambahkan")
+    print("3. Jumlah Harga yang dibayarkan")
+    
+    choice = input("Masukkan pilihan: ")
+    if choice == "1":
+        menu_name = input("Masukkan menu yang ingin dipesan: ")
+        add_to_cart(menu_name)
+    
+    elif choice == "2":
+        display_cart()
+    
+    elif choice == "3":
+        calculate_total()
+        print("Terima kasih telah memesan di D4 Miexu. Sampai jumpa!")
+        break
+    
+    else:
+        print("Pilihan tidak valid. Silakan pilih opsi yang benar.")
