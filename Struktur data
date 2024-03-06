@@ -31,3 +31,21 @@ def add_to_cart(menu_name):
             print(f"{item.name} sudah ditambahkan ke keranjang.")
             return
     print("Menu tidak ditemukan.")
+
+def display_cart():
+    if not cart:
+        print("Keranjang kosong.")
+        return
+    print("Pesanan yang sudah ditambahkan:")
+    for index, item in enumerate(cart, start=1):
+        print(f"{index}. {item.name} {item.harga} rupiah")
+
+def calculate_total():
+    total_price = sum(item.harga
+     for item in cart)
+    print(f"Total biaya yang harus dibayarkan adalah {total_price} rupiah. Terima kasih sudah memesan.")
+
+while True:
+    print("\nMenu Aplikasi Pemesanan:")
+    print("1. Tambah pesanan ke keranjang")
+    print("2. Tampilkan pesanan yang sudah ditambahkan")
